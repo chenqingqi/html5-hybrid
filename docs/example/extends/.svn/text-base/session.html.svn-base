@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>临时数据</title>
+		<script src="/core/extends/session.js"></script>
+	</head>
+	
+	<script>
+		
+		/**
+		 * 读取数据
+		 */
+		console.log(session.read('config'));
+		
+		/**
+		 * 写入数据
+		 */
+		session.write('config',{name:"app"});
+		
+		 
+	</script>
+	
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>触摸扩展</title>
+		<script src="/core/extends/touch.js"></script>
+	</head>
+	
+	<script>
+		
+		
+		/**
+		 * 触摸开始
+		 */
+		window.addEventListener('touchstart',function(e)
+		{
+			//起始位置
+			console.log(touch.rect)
+		})
+		
+		
+		/**
+		 * 触摸移动
+		 */
+		window.addEventListener('touchmove',function(e)
+		{
+			//滑动方向
+			console.log(touch.direction)
+			
+			//滑动距离
+			console.log(touch.distance)
+			
+			//滑动矩形
+			console.log(touch.rect)
+		})
+		
+		
+		/**
+		 * 触摸结束
+		 */
+		window.addEventListener('touchend',function(e)
+		{
+			//是否单击
+			console.log(touch.click)
+		})
+		 
+	</script>
+	
+</html>

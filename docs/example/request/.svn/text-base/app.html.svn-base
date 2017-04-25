@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+		<title>App接口调试</title>
+		<script src="/core/extends/request.js"></script>
+		<style>
+			
+			#host,#api,#type
+			{
+				display: block;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				text-indent: 5px;
+				padding: 0;
+			}
+			
+			#pass
+			{
+				display: block;
+				width: 100%;
+				height: 60px;
+				padding: 0;
+			}
+			
+			#return
+			{
+				display: block;
+				width: 100%;
+				height: 100px;
+				padding: 0;
+			}
+			
+			#btn
+			{
+				display: block;
+				width: 100%;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 10px;
+				margin-bottom: 5px;
+				padding: 0;
+				background-color: orange;
+				border: 0;
+				cursor: pointer;
+				color: #ffffff;
+			}
+			
+			p
+			{
+				padding: 0;
+				margin: 10px 0 10px 0;
+				color: #888;
+				font-size: 14px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p>App方法</p>
+		<textarea id="host">getUserData</textarea>
+		<p>传递值</p>
+		<textarea id="pass">{"username":"xiaoming","password":"123456"}</textarea>
+		<p>返回值</p>
+		<textarea id="return"></textarea>
+		<button id="btn">请求数据</button>
+		
+		<script>
+			
+			document.getElementById('btn').onclick = function(e)
+			{
+				try
+				{
+					var data = native.bridge(document.getElementById('host').value,document.getElementById('pass').value);
+					document.getElementById('return').value = data;
+				}
+				catch(e)
+				{
+					document.getElementById('return').value = '在App上没有找到'+document.getElementById('host').value+'方法';
+				}
+			}
+			
+		</script>
+	</body>
+</html>

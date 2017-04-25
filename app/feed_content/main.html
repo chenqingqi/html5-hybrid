@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+		<link href="style/main.css" rel="stylesheet"/>
+		<title>提交反馈</title>
+	</head>
+	<body  >
+		
+		<!--故障发生时间-->
+		<!--<p id="time">故障发生时间<span id="content">2016年11月01日 10:25</span></p>-->
+		
+		<!--文字输入-->
+		<div id="addenda">
+			<p id="title">补充内容</p>
+			<textarea id="content">请简要描述你的问题和意见(1000字以内)</textarea>
+		</div>
+		
+		<!--多图上传-->
+		<div id="photos">
+			<img id="add" src="/resource/photo_add.png" />
+			<input type="file" id="file" multiple hidden/>
+		</div>
+		
+		<!--手机输入-->
+		<p id="mobile">手机号码<input type="text" id="content" value="选填，便于我们给您答复"/></p>
+		
+		<!--提交按钮-->
+		<p id="submit">提交</p>
+		
+	</body>
+	<script src="/core/require.js" main="action/main"></script>
+</html>

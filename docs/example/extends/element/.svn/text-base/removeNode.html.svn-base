@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>删除节点</title>
+		<script src="/core/extends/dom.js"></script>
+	</head>
+	
+	<body>
+		
+		<slide>幻灯</slide>
+		
+		<script>
+		
+			$('body').addEventListener('removed',function()
+			{
+				console.log('对象已删除')
+			})
+			
+			
+			$('body').addEventListener('render',function()
+			{
+				console.log('显示列表已重绘')
+			})
+			
+			$('body').removeNode($('slide'))
+		
+		</script>
+		
+	</body>
+</html>

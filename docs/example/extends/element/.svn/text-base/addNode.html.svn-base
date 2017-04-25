@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加节点</title>
+		<script src="/core/extends/dom.js"></script>
+	</head>
+	
+	<body>
+		
+		
+		<script>
+		
+			var body = $('body')
+			
+			body.addEventListener('added',function()
+			{
+				console.log('对象已添加')
+			})
+			
+			
+			body.addEventListener('render',function()
+			{
+				console.log('显示列表已重绘')
+			})
+			
+			body.addNode($('<p>一段文本</p>')) 
+		
+		</script>
+		
+	</body>
+</html>

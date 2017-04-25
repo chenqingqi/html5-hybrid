@@ -1,0 +1,179 @@
+*
+{
+    margin   : 0;
+    padding  : 0;
+    overflow : hidden;
+    color    : #333333;
+    -webkit-tap-highlight-color:transparent;
+}
+
+
+html,body
+{
+    width    : 100%;
+    height   : 100%;
+    background-color: #F0F2F6;
+    overflow-y:auto;
+    position: absolute;
+}
+
+#time
+{
+    width :100%;
+    height:3rem;
+    background-color: #FFFFFF;
+    border-bottom   : 1px solid #F0F0F0;
+    
+    position: relative;
+    
+    line-height: 3rem;
+    text-indent: 1rem;
+    
+    
+    span
+    {
+        position: absolute;
+        color: #999;
+        right: 1rem;
+    }
+}
+
+
+#addenda
+{
+    width: 100%;
+    background-color: #FFFFFF;
+    
+    #title
+    {
+        height:3rem;
+        line-height: 3rem;
+        text-indent: 1rem;
+        background-color: #F0F2F6;
+    }
+    
+    #content
+    {
+        display: block;
+        width: 95%;
+        height:10rem;
+        margin:0.9rem;
+        
+        overflow-y: auto;
+        background-color: #FFF;
+       
+
+        color: #999;
+        outline:none; 
+        border: none;
+        border-radius: 0;
+        font-size: 1rem;
+    }
+}
+
+
+#photos
+{
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: #FFF;
+    
+    #add
+    {
+        float: left;
+        width: 5rem;
+        margin: 0.5rem 0.5rem 0.5rem 0.4rem;
+    }
+    
+    #rect
+    {
+        float: left;
+        position: relative;
+        width: 5rem;
+        background-color: #FFF;
+        margin: 0.5rem 0.5rem 0.2rem 0.4rem;
+        
+        padding: 0;
+        
+        #close
+        {
+            position: absolute;
+            right: 0;
+            width: 1.5rem;
+            margin: 0.16rem;
+        }
+        
+        #close:active
+        {
+            -webkit-filter:brightness(95%);
+                    filter:brightness(95%);
+        }
+        
+        #pic
+        {
+            width: 5rem;
+            margin: 0;
+        }
+    }
+    
+    
+    
+    #add:active
+    {
+        -webkit-filter:brightness(95%);
+                filter:brightness(95%);
+    }
+}
+
+
+#mobile
+{
+    width :100%;
+    height:3rem;
+    margin-top: 0.5rem;
+    background-color: #FFFFFF;
+    border-bottom   : 1px solid #F0F0F0;
+    
+    position: relative;
+    
+    line-height: 3rem;
+    text-indent: 1rem;
+    
+    
+    input
+    {
+        position: absolute;
+        right: 1rem;
+        width: 70%;
+        height: 3rem;
+        
+        border: none;
+        font-size: 1rem;
+        text-align: right;
+        color: #999;
+       
+        outline: none;
+    }
+}
+
+
+#submit
+{
+    width :90%;
+    height:3rem;
+    margin: 1.5rem 0 3rem 5%;
+    border-radius: 5px;
+    
+    color: #FFF;
+    line-height: 3rem;
+    text-align: center;
+}
+
+
+#submit:active
+{
+    -webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+

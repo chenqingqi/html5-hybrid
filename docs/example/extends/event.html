@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件</title>
+		<script src="/core/extends/event.js"></script>
+	</head>
+	
+	<script>
+		
+		
+		/**
+		 * 侦听
+		 */
+		addEventListener('ABC',function(e)
+		{
+			console.log(e.data)
+		})
+		
+		/**
+		 * 发送
+		 */
+		dispatchEvent(new Event('ABC','小明',false))
+		 
+	</script>
+	
+</html>

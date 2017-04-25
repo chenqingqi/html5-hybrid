@@ -1,0 +1,32 @@
+	<style>
+		
+		#box
+		{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+		}
+		
+		#rect
+		{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+		}
+		
+	</style>
+	
+	<div id="box">
+		
+		<div id="rect"></div>
+		
+	</div>
+	
+	
+	<script>
+	
+		var node = document.getElementById('box')
+		console.log(window.getComputedStyle(node,null)['height']))  //输出：100
+		console.log(node.scrollHeight) //输出：500
+		
+	</script>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="style/main.css" rel="stylesheet"/>
+		<title>文档模板</title>
+	</head>
+	<body>
+
+        <!-- 幻灯片模块 -->  
+        <slide>
+			<img src="xx.png" alt="图片a"/>
+			<img src="xx.png" alt="图片b"/>
+			<img src="xx.png" alt="图片c"/>
+		</slide>
+
+    </body>
+	<script src="/core/require-x.js" main="action/main"></script>
+</html>

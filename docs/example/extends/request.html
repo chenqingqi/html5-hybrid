@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTTP请求</title>
+		<script src="/core/extends/request.js"></script>
+	</head>
+	
+	<script>
+		
+		
+		request({
+			
+			debug:1,
+			deviceId:"h5",
+			webCode:"user1",
+			liveId:"855"
+			
+		},'http://192.168.3.6:88/Mobile/Index/','getChatRoomAction','post',function(e)
+		{
+			console.log(e.msg)
+		})
+		 
+	</script>
+	
+</html>

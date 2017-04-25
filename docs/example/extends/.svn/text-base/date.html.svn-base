@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>日期扩展</title>
+		<script src="/core/extends/date.js"></script>
+	</head>
+	
+	<script>
+		
+		
+		var date = new Date();
+		
+		console.log(date.format())
+		 
+	</script>
+	
+</html>

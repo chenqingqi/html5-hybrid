@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设置或获取节点深度</title>
+		<script src="/core/extends/dom.js"></script>
+		<style>
+		
+			red
+			{
+				display:block;
+				width:200px;
+				height:200px;
+				background-color:red;
+				
+				position: absolute;
+			}
+			
+			black
+			{
+				display:block;
+				width:200px;
+				height:200px;
+				background-color:black;
+				
+				position: absolute;
+				top: 150px;
+				left: 150px;
+			}
+			
+			
+			green
+			{
+				display:block;
+				width:200px;
+				height:200px;
+				background-color:green;
+				
+				position: absolute;
+				top: 300px;
+				left: 300px;
+			}
+			
+			</style>
+			
+			<script>
+		
+				window.onload = function()
+				{
+					console.log($('green').index())     //输出:2
+					
+					$('body').addEventListener('click',function(e)
+					{
+						e.target.index(2);
+						
+						console.log($('body').children) //输出:[red, black, green]
+					})
+				}
+				
+			</script>
+			
+	</head>
+	
+	<body>
+		
+		<red>红色</red>
+		<black>黑色</black>
+		<green>绿色</green>
+		
+	</body>
+</html>

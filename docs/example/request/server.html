@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"/>
+		<title>后台接口调试</title>
+		<script src="/core/extends/request.js"></script>
+		<style>
+			
+			#host,#api,#type
+			{
+				display: block;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				text-indent: 5px;
+				padding: 0;
+			}
+			
+			#pass
+			{
+				display: block;
+				width: 100%;
+				height: 60px;
+				padding: 0;
+			}
+			
+			#return
+			{
+				display: block;
+				width: 100%;
+				height: 100px;
+				padding: 0;
+			}
+			
+			#btn
+			{
+				display: block;
+				width: 100%;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 10px;
+				margin-bottom: 5px;
+				padding: 0;
+				background-color: orange;
+				border: 0;
+				cursor: pointer;
+				color: #ffffff;
+			}
+			
+			p
+			{
+				padding: 0;
+				margin: 10px 0 10px 0;
+				color: #888;
+				font-size: 14px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p>接口地址</p>
+		<textarea id="host">http://192.168.3.6:88/Mobile/Index/</textarea>
+		<p>接口名</p>
+		<textarea id="api">getHelpListAction</textarea>
+		<p>请求方式</p>
+		<textarea id="type">get</textarea>
+		<p>传递值</p>
+		<textarea id="pass">{"mid":"62","system":"0","type":"0"}</textarea>
+		<p>返回值</p>
+		<textarea id="return"></textarea>
+		<button id="btn">请求数据</button>
+		
+		
+		<script>
+			
+			document.getElementById('btn').onclick = function(e)
+			{
+				var pass = JSON.parse(document.getElementById('pass').value);
+				pass.debug = '1';
+				pass.deviceId = 'html5';
+				
+				request(pass,document.getElementById('host').value,document.getElementById('api').value,document.getElementById('type').value,function(e)
+				{
+				
+					if(e.code == 1000)
+					{
+						document.getElementById('return').value = JSON.stringify(e);
+					}
+					else
+					{
+						alert(e.msg);
+					}
+				})
+			}
+			
+		</script>
+	</body>
+</html>

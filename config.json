@@ -1,0 +1,21 @@
+{
+	"context":"0",
+	
+	"api":
+	{
+		"help_option"			:"getHelpListAction",
+		"help_content"			:"getDetailsAction",
+		"feed_option"			:"feedbackAction",
+		"feed_content"          :"createFeedBackAction",
+		"next_option"		    :"getListByIdAction"
+		
+	},
+	
+	"route":
+	{
+		"help_option"			:"/app/help_option/main.html",
+		"help_content"			:"/app/help_content/main.html",
+		"feed_option"			:"/app/feed_option/main.html",
+		"feed_content"			:"/app/feed_content/main.html"
+	}
+}

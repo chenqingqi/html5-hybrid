@@ -1,0 +1,35 @@
+/**
+ * 主样式
+ */
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 24px;
+}
+/**
+ * 子样式 
+ */
+module {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: #E9E9E9;
+  text-align: center;
+}
+module title {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #FFF;
+}
+module content {
+  display: block;
+  width: 100%;
+  height: 240px;
+  line-height: 240px;
+  background-color: #666;
+  color: #FFF;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择或创建节点</title>
+		<script src="/core/extends/dom.js"></script>
+	</head>
+	
+	<body>
+		
+		<slide>幻灯片</slide>
+		
+		<script>
+		
+			/**
+			 * 获取节点
+			 */
+			console.log($('slide')) 
+			console.log($('body'))  
+			
+			/**
+			 * 创建节点
+			 */
+			var photo = $('<photo>图片</photo>');
+			console.log(photo)  
+		
+		</script>
+		
+	</body>
+</html>

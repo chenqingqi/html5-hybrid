@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取或设置节点属性</title>
+		<script src="/core/extends/dom.js"></script>
+	</head>
+	
+	<body>
+		
+		<slide>幻灯片</slide>
+		
+		<script>
+		
+			
+			/**
+			 * 设置属性
+			 */
+			$('slide').attr({name:'小明'})
+			
+			/**
+			 * 获取属性
+			 */
+			console.log($('slide').attr('name'))  
+		
+		</script>
+		
+	</body>
+</html>

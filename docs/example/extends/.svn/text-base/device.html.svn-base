@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>硬件</title>
+		<script src="/core/extends/device.js"></script>
+	</head>
+	
+	<script>
+		
+		
+		device.location()
+		 
+	</script>
+	
+</html>

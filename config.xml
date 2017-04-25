@@ -1,0 +1,51 @@
+<!------------------
+ *
+ * 配置文件
+ * @api   数据接口
+ * @route 页面路由
+ *
+-------------------->
+
+<config>
+	
+	
+	<!--运行环境(0:测试,1:正式)-->
+	<context>0</context>
+	
+	<api>
+		
+		<!-- 帮助与反馈  -->
+		
+		<!--获取帮助分组-->
+		<help_option>getHelpListAction</help_option>
+		
+		<!--获取反馈分组-->
+		<feed_option>feedbackAction</feed_option>
+		
+		<!--获取下一分组-->
+		<next_option>getListByIdAction</next_option>
+		
+		<!--提交反馈内容-->
+		<feed_content>createFeedBackAction</feed_content>
+		
+	</api>
+	
+	<route>
+		
+		<!-- 帮助与反馈 -->
+		
+		<!--帮助分组-->
+		<help_option>/app/help_option/main.html</help_option>
+		
+		<!--帮助答案-->
+		<help_content>/app/help_content/main.html</help_content>
+		
+		<!--反馈分组-->
+		<feed_option>/app/feed_option/main.html</feed_option>
+		
+		<!--反馈提交-->
+		<feed_content>/app/feed_content/main.html</feed_content>
+		
+	</route>
+
+</config>

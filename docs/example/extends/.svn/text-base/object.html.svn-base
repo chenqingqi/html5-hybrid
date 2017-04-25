@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Object扩展</title>
+		<script src="/core/extends/object.js"></script>
+	</head>
+	
+	<script>
+		
+		
+		
+		function ABC()
+		{
+			
+		}
+		
+		var abc = new ABC();
+		
+		console.log(abc.name())
+		 
+	</script>
+	
+</html>

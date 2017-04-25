@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取父节点</title>
+		<script src="/core/extends/dom.js"></script>
+	</head>
+	
+	<body>
+		
+		<slide>幻灯片</slide>
+		
+		<script>
+		
+			
+			/**
+			 * 获取父节点
+			 */
+			console.log($('slide').parentNode)  
+		
+		</script>
+		
+	</body>
+</html>

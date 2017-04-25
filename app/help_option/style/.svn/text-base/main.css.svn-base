@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #333333;
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #F0F2F6;
+  overflow-y: auto;
+}
+#feed_tip {
+  height: 3rem;
+  line-height: 3rem;
+  text-indent: 1rem;
+  background-color: #F0F2F6;
+  color: #888;
+  font-size: 0.92rem;
+}
+#item {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+  line-height: 3rem;
+  text-indent: 1rem;
+}
+#item img {
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 0.5rem;
+  top: 0.7rem;
+}
+#item:active {
+  -webkit-filter: brightness(98%);
+  filter: brightness(98%);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>节点动画</title>
+		<script src="/core/extends/dom.js"></script>
+	</head>
+	<style>
+		
+		rect
+		{
+			display: block;
+			width: 200px;
+			height: 200px;
+			background-color: #333;
+		}
+		
+		
+		
+	</style>
+	<body>
+		
+		<rect>矩形</rect>
+		
+		<script>
+			
+			window.onload = function()
+			{
+				$('rect').animate({width:'500px',backgroundColor:'red'},1,'ease-out',function()
+				{
+					console.log('动画执行完成')
+				})
+			}
+			
+			$('rect').addEventListener('click',function()
+			{
+				this.animate({width:'100px',backgroundColor:'red'},1,'ease-out',function()
+				{
+					console.log('动画执行完成')
+				})
+				
+			})
+			
+			
+		</script>
+		
+	</body>
+</html>

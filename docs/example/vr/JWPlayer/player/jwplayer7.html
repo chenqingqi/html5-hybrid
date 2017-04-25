@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=640, user-scalable=no" />
+	<title>JWPlayerVR</title>
+    <script src="jwplayer.js"></script>
+    
+    <style>
+    	*
+    	{
+    		margin : 0;
+    		padding: 0;
+    	}
+    	
+    	#video
+    	{
+    		width: 640px;
+    		height: 360px;
+    		background-color:#000;
+    		text-align: center;
+    		line-height: 360px;
+    		font-family: "微软雅黑";
+    		color: #FFF;
+    	}
+    	
+    	#url
+    	{
+    		width: 510px;
+    		height: 40px;
+    		margin-top: 20px;
+    		text-indent: 5px;
+    	}
+    	
+    	#play
+    	{
+    		background-color:orange;
+    		border: none;
+    		color: #fff;
+    		height: 40px;
+    		width: 120px;
+    		cursor: pointer;
+    	}
+    	
+    </style>
+</head>
+
+<body>
+	
+    <div id="video">JW播放器：HTML5_VR测试</div>
+    <input  id="url" type="text" value="http://h5.gkk.cn/files/video.mp4"/>
+    <button id="play">播放</button>
+    
+    <script>
+    
+    
+    	var button = document.getElementById('play');
+    	button.addEventListener('click',function(e)
+    	{
+    		
+    		jwplayer.key="3cqmIyFPdwjExkdLPrXnwJwxlBq/0brb9DNuFQ==";
+    		
+    		var player = jwplayer("video");
+    		
+    		player.setup({
+	    		
+		        file: document.getElementById('url').value,
+		        width: 640,
+		        height: 360,
+		        plugins:{
+		        	
+					'vr.js': 'vr.js'
+				}
+		    })
+    	})
+    	
+	    
+    </script>
+    
+</body>
+</html>

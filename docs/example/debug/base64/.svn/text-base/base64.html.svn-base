@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			
+			
+			var str = '++abc';
+			
+			console.log(str.replace(/\+/g,'%2B'))
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>永久数据</title>
+		<script src="/core/extends/storage.js"></script>
+	</head>
+	
+	<script>
+		
+		/**
+		 * 读取数据
+		 */
+		console.log(storage.read('config'));
+		
+		/**
+		 * 写入数据
+		 */
+		storage.write('config',{name:"app"});
+		
+		/**
+		 * 删除数据
+		 */
+		storage.remove('config')
+		
+		 
+	</script>
+	
+</html>

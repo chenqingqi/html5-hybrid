@@ -1,0 +1,50 @@
+<meta charset="utf-8">
+<script>
+	
+	/**
+	 * 配置
+	 */
+	var http = new XMLHttpRequest();
+	http.open("GET",'/config.json',true); 
+	http.send();
+	http.onreadystatechange = function(e)
+	{
+		if(this.readyState == 4 && this.status == 200)
+		{
+			navigation(JSON.parse(http.responseText))
+		}
+		
+		if(this.readyState == 4 && this.status == 404)
+		{
+			throw '加载'+url+'失败'
+		}
+	}
+	
+	/**
+	 * 导航
+	 */
+	function navigation(r)
+	{
+		var name = get('name');
+		
+		if(name)
+		{
+			location.replace(r['route'][name])
+		}
+		else
+		{
+			throw '获取路由表失败'
+		}
+	}
+	
+	/**
+	 * GET值
+	 */
+	function get(name)
+	{
+	    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	    var r = location.search.substr(1).match(reg);
+	    if(r!=null)return  unescape(r[2]); return null;
+	}
+	
+</script>

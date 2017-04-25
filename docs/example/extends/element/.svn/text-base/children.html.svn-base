@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取子对象集合</title>
+		<script src="/core/extends/dom.js"></script>
+	</head>
+	
+	<body>
+		
+		<slide>幻灯</slide>
+		<photo>图片</photo>
+		
+		<script>
+		
+			/**
+			 * 遍历子节点
+			 */
+			for(var i=0;i<$('body').children.length;i++)
+			{
+				//节点类型
+				console.log($('body').children[i].nodeType)  
+				
+				//节点名称
+				console.log($('body').children[i].nodeName)  
+			}
+			
+		</script>
+		
+	</body>
+</html>

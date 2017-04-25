@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>调色</title>
+		<script src="/core/extends/toner.js"></script>
+	</head>
+	<body>
+		
+		<img id="photo" src="/resource/photo.png" />
+		<div id="slide" style="width:200px;height:200px;background-image: url(/resource/photo.png);"></div>
+	</body>
+	
+	<script>
+		
+		/**
+		 * RGB转换为16进制
+		 */
+		console.log(toner.toHex(255,255,255)) //#ffffff
+		
+		/**
+		 * 16进制转换为RGB
+		 */
+		console.log(toner.toRGB('#ffffff'))  //[255, 255, 255]
+		
+		
+		window.onload = function(e)
+		{
+			/**
+			 * 转换图片颜色
+			 */
+			toner.setImageColor(document.getElementById('photo'),'#5BAEF5','#FF0000')
+			
+			/**
+			 * 转换节点背景色
+			 */
+			toner.setBgImageColor(document.getElementById('slide'),'#5BAEF5','#FF0000')
+		}
+		
+		 
+	</script>
+	
+</html>
